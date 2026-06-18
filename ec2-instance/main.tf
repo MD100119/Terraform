@@ -35,7 +35,6 @@ resource "aws_security_group" "web_sgnew" {
   }
 }
 
-
 resource "aws_instance" "devops_project" {
   ami           = var.ami_id
   instance_type = var.instance_type
