@@ -100,7 +100,7 @@ resource "aws_iam_instance_profile" "ec2_profile" {
 resource "aws_instance" "devops_project" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  vpc_security_group_ids = [aws_security_group.web_sg.id]
+  vpc_security_group_ids = [aws_security_group.web_sgnew.id]
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
   user_data = <<-EOF
               #!/bin/bash
