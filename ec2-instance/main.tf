@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-resource "aws_security_group" "web_sg" {
+resource "aws_security_group" "web_sgnew" {
   name        = "web-security-group"
   description = "Allow SSH and HTTP"
 
